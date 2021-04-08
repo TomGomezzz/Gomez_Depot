@@ -1,4 +1,4 @@
-//Fonctions réalisées par l'étudiant 1 :
+//Fonctions réalisées par l'étudiant 1 Tom GOMEZ :
 
 
 
@@ -9,7 +9,7 @@
 
 
 
-//Fonctions réalisées par l'étudiant 2 :
+//Fonctions réalisées par l'étudiant 2 Thibault RODIER :
 
 bool estPair(int nb)
 {
@@ -51,10 +51,46 @@ int plusPetit(int a, int b, int c)
 }
 
 
+//Fonctions réalisées par l'étudiant 3 Romain LANTELME :
+bool estImpair(int nb)
+{
+    if(nb%2 != 0)
+    {
+        return true;
+    }
+    else 
+    {
+        return false;
+    }
+}
 
+float moyenne(int nb1, int nb2, int nb3)
+{
+    float moyenne;
+    moyenne = (nb1 + nb2 + nb3) /3;
+    return moyenne;
+}
 
+float reduction(int prix, int reduc)
+{
+    float prixReduc;
+    prixReduc = prix - (prix*reduc/100);
+    return prixReduc;
+}
 
-
-
-
-//Fonctions réalisées par l'étudiant 3 :
+int nombreMedian(int a, int b, int c)
+{
+    if(b<a && a<c || c<a && a<b)
+    {
+        return a;
+    }   
+    else if(a<b && b<c || c<b && b<a)
+    {
+        return b;
+    }
+    else if(b<c && c<a || a<c && c<b)
+    {
+        return c;
+    }
+}
+    
